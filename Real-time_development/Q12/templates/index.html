@@ -14,6 +14,7 @@
     <script>
         var socket = io.connect('http://' + document.domain + ':' + location.port);
 
+        
         socket.on('data_updated', function(newData) {
             document.getElementById('counter').innerText = newData.counter;
         });

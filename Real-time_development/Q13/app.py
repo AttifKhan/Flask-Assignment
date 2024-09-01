@@ -19,6 +19,7 @@ def handle_new_notification(notification):
     notifications.append(notification)
     socketio.emit('update_notifications', notifications, broadcast=True)
 
+
 if __name__ == '__main__':
     socketio.run(app, debug=True)
 

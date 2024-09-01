@@ -12,6 +12,7 @@ def index():
         return f"Hello, {username}! <a href='/logout'>Logout</a>"
     return 'You are not logged in. <a href="/login">Login</a>'
 
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':

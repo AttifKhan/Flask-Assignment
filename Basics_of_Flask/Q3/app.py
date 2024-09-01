@@ -10,6 +10,7 @@ def dynamic_content():
         "<p>To access dynamic content, go to <a href='/greet?name=YourName'>/greet?name='YourName'></a></p>"
     )
     
+    
 @app.route("/greet")
 def greet():
     data = request.args.get("name")

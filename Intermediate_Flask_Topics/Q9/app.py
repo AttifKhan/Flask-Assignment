@@ -10,6 +10,7 @@ books = [
     {"id": 2, "title": "To Kill a Mockingbird", "author": "Harper Lee"}
 ]
 
+
 # Routes for CRUD operations
 
 # Read all books

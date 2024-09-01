@@ -19,5 +19,6 @@ def handle_update_data(new_data):
     data = new_data
     socketio.emit('data_updated', new_data)  # Remove broadcast=True
 
+
 if __name__ == '__main__':
     socketio.run(app, debug=True)

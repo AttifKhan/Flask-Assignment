@@ -9,6 +9,7 @@ def create_table():
         cursor = con.cursor()
         cursor.execute("CREATE TABLE IF NOT EXISTS student (id INTEGER PRIMARY KEY, name TEXT, address TEXT)")
         con.commit()
+        
 
 @app.route("/")
 def index():

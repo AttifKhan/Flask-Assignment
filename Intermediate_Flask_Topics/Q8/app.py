@@ -9,6 +9,7 @@ app.secret_key = 'hulum'
 login_manager = LoginManager()
 login_manager.init_app(app)
 
+
 # Sample user data (replace with your database logic)
 users = {
     'user1': {'username': 'user1', 'password_hash': generate_password_hash('password1')},
